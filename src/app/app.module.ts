@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { SummaryPipe } from './shared/pipe/summary.pipe';
+import { WordLimitPipe } from './shared/pipe/wordLimit.pipe';
+import { FilterPipe } from './shared/pipe/filter.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SummaryPipe,
+    WordLimitPipe,
+    FilterPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
